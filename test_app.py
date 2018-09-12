@@ -13,7 +13,7 @@ class TestApp(unittest.TestCase):
 		result = self.app.get('/')
 		print('result', result.get_data())
 		self.assertEqual(result.status_code, 200)
-		self.assertEqual(result.get_data(), b'200 OK')
+		self.assertEqual(result.get_data(), b'200 OK!')
 
 
 
